@@ -12,7 +12,7 @@
   <body>
     <form id="form">
       <p id="message">Please enter your password.</p>
-      <input type="password" placeholder="password" id="password">
+      <input type="password" placeholder="password" id="yurinakinoshita">
     </form>
     <script>
       function hash(text) {
@@ -30,7 +30,7 @@
             window.location = url;
           } else {
             const message = document.getElementById('message');
-            const input = document.getElementById('password');
+            const input = document.getElementById('yurinakinoshita');
             message.innerHTML = 'Wrong password! Try again.';
             input.value = '';
           }
@@ -42,7 +42,7 @@
       }
       const form = document.getElementById('form');
       form.addEventListener('submit', function (event) {
-        const portfolio = document.getElementById('password').value;
+        const portfolio = document.getElementById('yurinakinoshita').value;
         auth(portfolio);
         event.preventDefault();
       });
